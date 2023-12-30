@@ -1,72 +1,47 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>FOUNDIT</title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<h1 class="counter">0</h1>
 
-		<div class="overlay">
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FoundIt</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div id="loader">
+		<div class="line">
+			<div id="line1-part1">
+				<h5>00</h5>
+				<h6>- 100</h6>
+			</div>
+			<h1>Your</h1>
+		</div>
+		<div class="line">
+			<h1>Web Experiences</h1>
+		</div>
+		<div class="line">
+			<h1>is loading right </h1>
+			<h2>now</h2>
 		</div>
 
-		<div class="container">
-			<div class="hero_background">
-				<video
-					src="./video-bg-light.mp4"
-					playsinline
-					autoplay
-					muted
-					loop
-					class="hero_background"
-				></video>
-			</div>
-			<div class="header">
-				<div class="h1">{ W</div>
-				<div class="h1">o</div>
-				<div class="h1">r</div>
-				<div class="h1">k</div>
-				<div class="h1">i</div>
-				<div class="h1">n</div>
-				<div class="h1">g</div>
-				<div class="h1">on</div>
-				<div class="h1">it</div>
-				<div class="h1">. }</div>
-			</div>
-		</div>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-			integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
+	</div>
+	<div id="main">
+		<div id="page1"></div>
+		<div id="page2"></div>
+		<div id="page3"></div>
 
-		<script src="script.js" async defer></script>
-	</body>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+		integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+		integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./script.js" async defer></script>
+</body>
+
 </html>

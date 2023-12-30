@@ -1,42 +1,44 @@
-function startLoader() {
-	let counterELement = document.querySelector(".counter");
-	let currentValue = 0;
+let tl = gsap.timeline();
+tl.from(".line h1", {
+	y: 150,
+	stagger: 0.25,
+	duration: 0.6,
+	delay: 0.5,
+});
 
-	function updateCounter() {
-		if (currentValue === 100) {
-			return;
-		}
-		currentValue += Math.floor(Math.random() * 10) + 1;
-		if (currentValue > 100) {
-			currentValue = 100;
-		}
-		counterELement.textContent = currentValue;
-		let delay = Math.floor(Math.random() * 200) + 50;
-		setTimeout(updateCounter, delay);
-	}
-	updateCounter();
-}
-startLoader();
-
-gsap.to(".counter", 0.25, {
-	delay: 3.5,
+tl.from("#line1-part1", {
 	opacity: 0,
-});
-
-gsap.to(".bar", 1.5, {
-	delay: 3.5,
-	height: 0,
-	stagger: {
-		amount: 0.5,
+	onStart: () => {
+		let h5timer = document.querySelector("#line1-part1 h5");
+		let grow = 0;
+		setInterval(() => {
+			if (grow < 100) {
+				h5timer.innerHTML = grow++;
+			} else {
+				h5timer.innerHTML = grow;
+			}
+		}, 33);
 	},
-	ease: "power4.inOut",
 });
 
-gsap.from(".h1", 1.5, {
+tl.to(".line h2", {
+	animationName: "anime",
+	opacity: 1,
+});
+
+tl.to("#loader", {
+	opacity: 0,
+	duration: 0.2,
 	delay: 4,
-	y: 700,
-	stagger: {
-		amount: 0.5,
-	},
-	ease: "power4.inOut",
+});
+
+tl.from("#page1", {
+	delay: 0.2,
+	y: 1600,
+	opacity: 0,
+	ease: Power4,
+	duration: 0.5,
+});
+tl.to("#loader", {
+	display: none,
 });
