@@ -610,7 +610,7 @@ body {
 }
 
 #page4-content > p {
-	font-size: 2.05vw;
+	font-size: 1.50vw;
 	width: 50%;
 	margin-bottom: 3vw;
 }
@@ -911,9 +911,10 @@ body {
 }
 
 #flag {
-	height: 25vw;
+	height: 12vw;
+	border-radius: 5%;
 	position: absolute;
-	top: 0;
+	top: 17%;
 	opacity: 0;
 
 	left: 0;
