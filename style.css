@@ -610,7 +610,7 @@ body {
 }
 
 #page4-content > p {
-	font-size: 1.50vw;
+	font-size: 1.5vw;
 	width: 50%;
 	margin-bottom: 3vw;
 }
@@ -663,12 +663,6 @@ body {
 .blue-div-elem p {
 	width: 40%;
 	font-size: 0.8vw;
-}
-
-#page5 {
-	min-height: 100vh;
-	width: 100%;
-	position: relative;
 }
 
 .elem {
@@ -814,12 +808,12 @@ body {
 
 #footer {
 	height: fit-content;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	/* background-color: red; */
 	position: relative;
-	padding-left: 28vw;
 	margin-top: 5vw;
-	padding-right: 2vw;
 }
 
 #footer h1 {
@@ -1159,6 +1153,7 @@ span {
 	font-size: 0.85em;
 	margin-top: 8px;
 }
+
 /* qr */
 #qr {
 	background-color: #151515;
@@ -2025,12 +2020,6 @@ span {
 		margin: 26vw 0 7vw 0;
 	}
 
-	#page5 {
-		min-height: 60vh;
-		width: 100%;
-		position: relative;
-	}
-
 	.elem {
 		white-space: nowrap;
 		overflow-x: hidden;
@@ -2123,6 +2112,9 @@ span {
 	#footer {
 		height: 108vh;
 		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		/* background-color: red; */
 		margin-top: 20vw;
 		position: relative;

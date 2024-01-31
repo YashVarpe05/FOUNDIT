@@ -152,12 +152,19 @@ function sheryAnimation() {
 	Shery.imageEffect(".image-div", {
 		style: 5,
 		gooey: true,
-		// debug:true,
+		// debug: true,
 		config: {
 			a: { value: 2, range: [0, 30] },
-			b: { value: 0.75, range: [-1, 1] },
+			b: { value: -1, range: [-1, 1] },
 			zindex: { value: -9996999, range: [-9999999, 9999999] },
 			aspect: { value: 0.7241195453907675 },
+			ignoreShapeAspect: { value: true },
+			shapePosition: { value: { x: 0, y: 0 } },
+			shapeScale: { value: { x: 0.5, y: 0.5 } },
+			shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+			shapeRadius: { value: 0, range: [0, 2] },
+			currentScroll: { value: 0 },
+			scrollLerp: { value: 0.07 },
 			gooey: { value: true },
 			infiniteGooey: { value: false },
 			growSize: { value: 4, range: [1, 15] },
@@ -260,7 +267,9 @@ const addWord = (text, index) => subtitle.appendChild(createWord(text, index));
 
 const createSubtitle = (text) => text.split(" ").map(addWord);
 
-createSubtitle("But in a much more real sense, I have no idea what I'm doing.");
+createSubtitle(
+	"FoundIt: Redefining lost item recovery with tech innovation and community focus. Secure, private, and future-ready."
+);
 
 let index = 0,
 	interval = 1000;
