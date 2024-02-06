@@ -380,6 +380,31 @@ const handleOnMove = (e) => {
 card.onmousemove = (e) => handleOnMove(e);
 
 card.ontouchmove = (e) => handleOnMove(e.touches[0]);
+
+const contributor = () => {
+	const gaurav = document.getElementById("card1");
+	const yash = document.getElementById("card2");
+	const prathemsh = document.getElementById("card3");
+	const aditya = document.getElementById("card4");
+
+	gaurav.onclick = () => {
+		let url = "https://github.com/chaudhariGaurav07";
+		window.open(url, "_blank");
+	};
+	yash.onclick = () => {
+		let url = "https://github.com/YashVarpe05";
+		window.open(url, "_blank");
+	};
+	prathemsh.onclick = () => {
+		let url = "https://github.com/";
+		window.open(url, "_blank");
+	};
+	aditya.onclick = () => {
+		let url = "https://github.com/SuryawanshiAditya";
+		window.open(url, "_blank");
+	};
+};
+contributor();
 loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
